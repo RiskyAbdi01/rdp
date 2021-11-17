@@ -60,4 +60,4 @@ jobs:
 
   
 
-        ./loop.ps1
+        ./loop.bat
