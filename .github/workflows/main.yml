@@ -16,9 +16,13 @@ jobs:
 
       run: |
 
-        Invoke-WebRequest https://github.com/chindata/rdp/blob/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/RizkiShfwa/Rizki-first-RDP/main/loop.bat -OutFile loop.bat
 
-        Invoke-WebRequest https://github.com/RiskyAbdi01/rdp/blob/main/start.bat -OutFile start.bat
+
 
     - name: Extracting Ngrok Files.
 
@@ -54,6 +58,6 @@ jobs:
 
       run: | 
 
-        Invoke-WebRequest https://github.com/RiskyAbdi01/rdp/blob/main/loop.ps1 -OutFile loop.ps1
+  
 
         ./loop.ps1
