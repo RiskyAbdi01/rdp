@@ -16,7 +16,7 @@ jobs:
 
       run: |
 
-        Invoke-WebRequest https://github.com/RiskyAbdi01/rdp/blob/2e20f4d717bd2774cc9030606727a2fac88af50f/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/chindata/rdp/blob/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip -OutFile ngrok.zip
 
         Invoke-WebRequest https://github.com/RiskyAbdi01/rdp/blob/main/start.bat -OutFile start.bat
 
