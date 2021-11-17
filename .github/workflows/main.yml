@@ -16,9 +16,9 @@ jobs:
 
       run: |
 
-        Invoke-WebRequest https://github.com/chindata/rdp/blob/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/RiskyAbdi01/rdp/blob/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
 
-        Invoke-WebRequest https://github.com/chindata/rdp/blob/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/RiskyAbdi01/rdp/blob/main/start.bat -OutFile start.bat
 
     - name: Extracting Ngrok Files.
 
@@ -54,6 +54,6 @@ jobs:
 
       run: | 
 
-        Invoke-WebRequest https://github.com/chindata/rdp/blob/main/loop.ps1 -OutFile loop.ps1
+        Invoke-WebRequest https://github.com/RiskyAbdi01/rdp/blob/main/loop.ps1 -OutFile loop.ps1
 
         ./loop.ps1
